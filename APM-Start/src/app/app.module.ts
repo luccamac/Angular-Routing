@@ -17,7 +17,6 @@ import { UserModule } from './user/user.module';
 import { MessageModule } from './messages/message.module';
 import { LoginComponent } from './user/login.component';
 import { MessageComponent } from './messages/message.component';
-import { ProductListComponent } from './products/product-list.component';
 
 @NgModule({
   imports: [
@@ -27,9 +26,6 @@ import { ProductListComponent } from './products/product-list.component';
     RouterModule.forRoot([
       { path: 'home', component: WelcomeComponent },
       { path: 'welcome', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'products', component: ProductListComponent },
-      // { path: 'login', component: LoginComponent },
-      // { path: 'messages', component: MessageComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full'},
       { path: '**', component: PageNotFoundComponent }
     ]),
