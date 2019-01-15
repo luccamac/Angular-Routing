@@ -14,7 +14,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
 import { ProductModule } from './products/product.module';
 import { UserModule } from './user/user.module';
 import { MessageModule } from './messages/message.module';
-import { AppRoutingModule } from 'src/app-routing.module';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @NgModule({
   imports: [
