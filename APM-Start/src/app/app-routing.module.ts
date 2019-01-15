@@ -10,7 +10,8 @@ import { PageNotFoundComponent } from './page-not-found.component';
         { path: 'welcome', redirectTo: 'home', pathMatch: 'full' },
         { path: '', redirectTo: 'home', pathMatch: 'full'},
         { path: '**', component: PageNotFoundComponent }
-      ])],
+        ]
+      )],
       exports: [RouterModule]
 })
 export class AppRoutingModule { }
